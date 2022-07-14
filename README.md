@@ -1,1 +1,6 @@
-# Java_KPP_Lb9
+Task #1
+Write a simple distributed client/server application using TCP sockets. In this application, the server accepts tasks from clients, executes these tasks, determines their execution time, and then returns all this information to the client. At the same time, it is the clients who create their own tasks and send them to the server for execution (the task class must implement the interface defined in accordance with the contract with the server). The task class definition is sent by the client to the server, and as soon as the class file becomes available, the server can perform the received task. Similarly, the server creates an object of the result class and sends it along with the class definition to the client. At the same time, the result class implements the interface known to the client.
+As a client task, you can take the task of calculating the factorial of a fairly large number.
+Task #2
+Consider the interaction of two computers in the network. Before starting work, the computers must exchange IP addresses. This can become quite a difficult task. Let's create a special UDP server that will help computers to exchange
+"Coordinates": IP addresses and port numbers. Then we will create UDP clients that will check the operation of the server: they will send a request that registers the sent computer on the server and receive the server's response - a list of already registered computers.
